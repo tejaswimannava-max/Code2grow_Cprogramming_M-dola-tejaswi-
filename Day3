@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+float tu,c=50,tb;
+printf("Enter total units consumed:");
+scanf("%f",&tu);
+printf("\nElectricity bill summary:");
+printf("\nunits consumed:%f\n",tu);
+if (tu>0 && tu<=100) 
+{
+tb=(3*tu+50);
+}
+else if(tu>100 && tu<=200)
+{
+tb=((9*tu/2)+50);
+}
+else if(tu>200 && tu<=300)
+{
+tb=(6*tu + 50);
+}
+else
+{
+  tb=(8*tu+50);
+}
+printf("Total Bill (including ₹50 meter charge):%f",tb);
+
+return 0;
+}
